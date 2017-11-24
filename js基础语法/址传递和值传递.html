@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+
+    <h5>址传递和值传递</h5>
+    <script>
+        var a = [1,2,3,4,5];
+        var b = a;
+        var c = a[0];
+        alert(b);//1,2,3,4,5
+        alert(c);//1
+        //改变数值
+        b[4] = 6;
+        c = 7;
+        alert(a[4]);//6
+        alert(a[0]);//1
+    </script>
+</body>
+</html>
