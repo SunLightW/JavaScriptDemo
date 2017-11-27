@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+</head>
+<body>
+<button onclick="f1(a)">canshu</button>
+<button onclick="f2(a1)">canshu</button>
+
+    <script type="text/javascript">
+        var a  = [1,2,3,4];
+        var a1 =2;
+        function f1(a) {
+            var b = a;
+            b[0] = 2;
+            a[1] = 33;
+            alert(a[0]);
+            alert(b);
+        }
+
+        function f2(a1) {
+            var b = a1;
+            alert(b);
+        }
+    </script>
+</body>
+</html>

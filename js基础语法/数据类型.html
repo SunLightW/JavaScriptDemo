@@ -24,6 +24,7 @@
     <button onclick="c5()">点我知道变量类型</button></br>
     <button onclick="c6()">不同类型加</button></br>
     <button onclick="c7()">不同类型减</button></br>
+    <button onclick="f8()">函数</button>
 
     <p id="p2">www</p>
     <p id="p3">kkk</p>
@@ -84,6 +85,13 @@
             alert(f);
             document.getElementById("p4").innerHTML='g的值是'+g+';g的数据类型是:'+typeof(g);
             document.getElementById("p5").innerHTML='h的值是'+h+';h的数据类型是:'+typeof(h);
+        }
+        function f8() {
+            var a = function () {
+                alert("jasmine");
+            };
+            var b = typeof(a);
+            alert( b);
         }
     </script>
 </body>
