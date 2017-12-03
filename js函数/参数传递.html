@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参数传递</title>
+</head>
+<body>
+<button onclick="f1(a)">canshu</button><br>
+<button onclick="f2()">canshu</button>
+
+    <script>
+        var a = [1,2,3,4];
+
+        function f1(cj) {
+            alert(cj);
+            cj[0] = 22;
+            alert(cj);
+        }
+
+        function f2() {
+            alert(a);
+        }
+
+    </script>
+</body>
+</html>
