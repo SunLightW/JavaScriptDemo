@@ -5,94 +5,16 @@
     <title>js变量和数据类型</title>
 </head>
 <body>
-    <H3>Js的数据类型有以下几种</H3>
+    <H3>Js的数据类型有以下6种</H3>
     <ul>
-        <li>字符串--string</li>
-        <li>数字--number</li>
-        <li>布尔--boolean</li>
-        <li>数组--array</li>
-        <li>对象--object</li>
-        <li>NUll</li>
-        <li>undefined</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Boolean</li>
+        <li>Number</li>
+        <li>String</li>
+        <li>Object</li>
     </ul>
 
-    <p id="p1">下面是js示例：</p>
-    <button onclick="c1()">点我弹框</button></br>
-    <button onclick="c2()">点我控制台</button></br>
-    <button onclick="c3()">点我改变p的内容</button></br>
-    <button onclick="c4()">点我写入html</button></br>
-    <button onclick="c5()">点我知道变量类型</button></br>
-    <button onclick="c6()">不同类型加</button></br>
-    <button onclick="c7()">不同类型减</button></br>
-    <button onclick="f8()">函数</button>
-
-    <p id="p2">www</p>
-    <p id="p3">kkk</p>
-    <p id="p4">jjj</p>
-    <p id="p5">hhh</p>
-
-    <script type="application/javascript">
-        function c1() {
-            alert("jjjj");
-        }
-        function c2() {
-            console.log("jjj");
-        }
-        function c3() {
-            var target1 = document.getElementById("p2");
-            alert(target1);
-            target1.innerHTML="jjjj";
-        }
-        function c4() {
-            document.write("jjj");
-        }
-        function c5() {
-            var a = 'kkk';//string
-            var b = 12;//number
-            var c  = true;//boolean
-            var d = document.getElementById("p2");//object
-            var e = null;//null
-            var f = undefined;//undefined
-            var g = ['ww',22,'33'];//array
-            d.innerHTML ='a的值是：'+a+ ';a的数据类型是：'+typeof(a)+';\r'+
-                         'b的值是：'+b+ ';b的数据类型是：'+typeof(b)+';\r'+
-                         'c的值是：'+c+ ';c的数据类型是：'+typeof(c)+';\r'+
-                         'd的值是：'+d+ ';d的数据类型是：'+typeof(d)+';\r'+
-                         'e的值是：'+e+ ';e的数据类型是：'+typeof(e)+';\r'+
-                         'f的值是：'+f+ ';f的数据类型是：'+typeof(f)+';\r'+
-                         'g的值是：'+g+ ';g的数据类型是：'+typeof(g)+';\r';
-        }
-        function c6() {
-            var a = '22';
-            var b = 22;
-            var c = a + b;
-            var d = b + a;
-            document.getElementById("p2").innerHTML='c的值是'+c+';c的数据类型是:'+typeof(c);
-            document.getElementById("p3").innerHTML='d的值是'+d+';d的数据类型是:'+typeof(d);
-        }
-        function c7() {
-            var a = '22';
-            var b = 22;
-            var c = a - b;
-            var d = b - a;
-            document.getElementById("p2").innerHTML='c的值是'+c+';c的数据类型是:'+typeof(c);
-            document.getElementById("p3").innerHTML='d的值是'+d+';d的数据类型是:'+typeof(d);
-
-            var e = 'jjj';
-            var f = Number(e);
-            var g = e - b;
-            var h = f - b;
-            alert(f);
-            document.getElementById("p4").innerHTML='g的值是'+g+';g的数据类型是:'+typeof(g);
-            document.getElementById("p5").innerHTML='h的值是'+h+';h的数据类型是:'+typeof(h);
-        }
-        function f8() {
-            var a = function () {
-                alert("jasmine");
-            };
-            var b = typeof(a);
-            alert( b);
-        }
-    </script>
+    <script type="text/javascript" src="数据类型.js"></script>
 </body>
 </html>
