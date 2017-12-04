@@ -33,33 +33,58 @@
 //跳转语句
 //return
 //break
-var x2="";
+var x1="";
 for (var i=0;i<10;i++){
     if (i==3){
         break;
     }
-    x = "该数字为 " + i;
-    console.log(x2);
+    x1 = "break;;该数字为 " + i;
+    console.log(x1);
 };
 
 //continue
-var x1="";
+var x2="";
 for (var i=0;i<10;i++){
     if (i==3){
         continue;
     }
-    x1= "该数字为 " + i ;
-    console.log(x1);
+    x2= "continue;;;该数字为 " + i ;
+    console.log(x2);
 }
 
 
 //循环语句
-//do...while
 //while
+var x3="",i=0;
+while (i<5){
+    x3= "while;;;该数字为 " + i;
+    i++;
+    console.log(x3);
+}
+
 //for
+var x4 ="";
+for (var i=0;i<5;i++){
+    x4 = "for;;;该数字为 " + i ;
+    console.log(x4);
+}
+//do...while
+var x5 ="",i=0;
+do{
+    x5="该数字为 " + i ;
+    i++;
+}
+while (i<5)
+console.log(x5);
+
 //for...in
-
-
+var x6;
+var txt="";
+var person={fname:"Bill",lname:"Gates",age:56};
+for (x6 in person){
+    txt=txt + person[x6];
+}
+console.log(txt);
 
 //异常语句
 //try...catch...finally
